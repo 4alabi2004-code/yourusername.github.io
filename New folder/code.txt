@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fix & Flip Investment Group</title>
+  <style>
+    body { margin:0; font-family:Arial,Helvetica,sans-serif; background:#f5f7fa; color:#333; }
+    header { background:#0f172a; color:#fff; padding:60px 20px; text-align:center; }
+    nav { background:#020617; padding:12px; text-align:center; position:sticky; top:0; }
+    nav a { color:#fff; margin:0 14px; text-decoration:none; font-weight:bold; }
+    section { padding:60px 20px; max-width:1200px; margin:auto; }
+    h2 { color:#0f172a; margin-bottom:20px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:20px; }
+    .card { background:#fff; border-radius:14px; padding:25px; box-shadow:0 6px 18px rgba(0,0,0,.08); }
+    .highlight { background:#e0f2fe; }
+    input, textarea { width:100%; padding:12px; margin:10px 0; border-radius:6px; border:1px solid #ccc; }
+    button { background:#0f172a; color:#fff; border:none; padding:14px; border-radius:8px; cursor:pointer; width:100%; font-size:16px; }
+    .hero-btn { max-width:300px; margin:20px auto; }
+    footer { background:#0f172a; color:#fff; text-align:center; padding:30px; }
+    .chart { height:220px; background:linear-gradient(135deg,#0ea5e9,#1e40af); border-radius:12px; display:flex; align-items:flex-end; padding:15px; gap:10px; }
+    .bar { width:25%; background:#fff; border-radius:6px 6px 0 0; }
+    .bar:nth-child(1){height:40%}
+    .bar:nth-child(2){height:65%}
+    .bar:nth-child(3){height:85%}
+    .bar:nth-child(4){height:70%}
+    .whatsapp { position:fixed; bottom:20px; right:20px; background:#25D366; color:#fff; padding:14px 18px; border-radius:50px; text-decoration:none; font-weight:bold; box-shadow:0 6px 16px rgba(0,0,0,.2); }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Fix & Flip Investment Group</h1>
+  <p>Transparent Real Estate Investments • Strong ROI • Sustainable Growth</p>
+  <div class="hero-btn">
+    <button onclick="document.getElementById('contact').scrollIntoView()">Become an Investor</button>
+  </div>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#strategy">Strategy</a>
+  <a href="#roi">ROI</a>
+  <a href="#projects">Projects</a>
+  <a href="#pitch">Investor Pitch</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Our Company</h2>
+  <p>
+    We are a Fix & Flip real estate investment group focused on acquiring undervalued residential properties in strong US markets. Our goal is to deliver consistent returns through disciplined buying, quality renovations, and data-driven exits.
+  </p>
+</section>
+
+<section id="strategy">
+  <h2>Our Investment Strategy</h2>
+  <div class="grid">
+    <div class="card"><h3>Acquire Below Market</h3><p>We only buy properties that meet strict discount criteria.</p></div>
+    <div class="card"><h3>Renovate Professionally</h3><p>Value-adding renovations focused on resale demand.</p></div>
+    <div class="card"><h3>Exit Strategically</h3><p>Sell at market peaks or convert to rentals when needed.</p></div>
+  </div>
+</section>
+
+<section id="roi">
+  <h2>ROI & Growth Illustration</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Sample ROI Growth</h3>
+      <div class="chart">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <p><small>Illustrative ROI growth over multiple projects</small></p>
+    </div>
+    <div class="card highlight">
+      <ul>
+        <li>Purchase: $100,000</li>
+        <li>Renovation: $30,000</li>
+        <li>Total Cost: $130,000</li>
+        <li>Sale Price: $200,000</li>
+        <li><strong>Projected Profit: $70,000</strong></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Sample Properties</h2>
+  <div class="grid">
+    <div class="card"><h3>Atlanta, GA</h3><p>3 Bed • 2 Bath • Flip Project</p><p><em>Before & After Renovation</em></p></div>
+    <div class="card"><h3>Houston, TX</h3><p>Rental-to-Flip Conversion</p><p><em>Value-Add Strategy</em></p></div>
+    <div class="card"><h3>Memphis, TN</h3><p>Cash Buyer Opportunity</p><p><em>Off-Market Deal</em></p></div>
+  </div>
+</section>
+
+<section id="pitch">
+  <h2>Investor Pitch</h2>
+  <div class="card">
+    <p>
+      Our mission is to partner with investors seeking short-term, asset-backed returns through residential real estate. By leveraging conservative acquisition rules, experienced project management, and transparent reporting, we aim to protect capital while maximizing upside.
+    </p>
+    <p><strong>Target Returns:</strong> 15–35% per project</p>
+    <p><strong>Investment Duration:</strong> 4–8 months</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Investor Signup & Contact</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Join Our Investor List</h3>
+      <form action="https://formspree.io/f/xxxxxx" method="POST">
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <textarea name="message" placeholder="Investment goals or questions"></textarea>
+        <button type="submit">Join Now</button>
+      </form>
+      <p><small>*Replace Formspree link with your own ID</small></p>
+    </div>
+    <div class="card">
+      <h3>Direct Contact</h3>
+      <p>Email: invest@yourcompany.com</p>
+      <p>WhatsApp: +1 XXX XXX XXXX</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Legal Disclaimer</h2>
+  <p>
+    This website is for informational purposes only and does not constitute investment advice. All investments involve risk, including potential loss of capital. Past performance does not guarantee future results.
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 Fix & Flip Investment Group | All Rights Reserved</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/1XXXXXXXXXX" target="_blank">WhatsApp Us</a>
+
+</body>
+</html>
